@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:TSVAligner}",
+            "name": "Debug TSVAligner",
+            "target": "TSVAligner",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug TSVAligner"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:TSVAligner}",
+            "name": "Release TSVAligner",
+            "target": "TSVAligner",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release TSVAligner"
+        }
+    ]
+}
