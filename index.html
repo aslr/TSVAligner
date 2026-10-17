@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swift TSV Aligner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Swift TSV Aligner</h2>
+
+    <div class="pane">
+        <label for="inputArea">Paste your TSV text here:</label>
+        <textarea id="inputArea" placeholder="Paste TSV data here..."></textarea>
+    </div>
+
+    <button id="formatBtn">Format Columns</button>
+
+    <div class="pane" style="margin-top: 20px;">
+        <label for="outputArea">Aligned Output:</label>
+        <textarea id="outputArea" readonly placeholder="Aligned text will appear here..."></textarea>
+    </div>
+
+    <!-- Load the Swift WASM bridge -->
+    <script type="importmap">
+    {
+        "imports": {
+            "@bjorn3/browser_wasi_shim": "https://cdn.jsdelivr.net/npm/@bjorn3/browser_wasi_shim@0.3.0/+esm"
+        }
+    }
+    </script>
+
+    <script type="module">
+        try {
+            const { init } = await import("./.build/plugins/PackageToJS/outputs/Package/index.js");
+            await init();
+        } catch (e) {
+            console.error("Swift init failed:", e);
+        }
+    </script>
+</body>
+</html>
