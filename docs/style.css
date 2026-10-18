@@ -2,24 +2,69 @@
 
 body {
     font-family: sans-serif;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
+    margin: 10px auto;
+    padding: 0 25px;
+    background-color: #444;
+    color: #eee;
 }
 
 textarea {
     width: 100%;
-    height: 150px;
+    height: 250px;
     font-family: monospace;
     margin-bottom: 10px;
+    background-color: #ccc;
+    margin: 10px 0px
 }
 
-button {
+button-old {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    color: #eee;
+    background-color: #b43838;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: none;
+}
+
+button {
+  background: #b43838;
+  border-radius: 999px;
+  box-shadow: #b43838 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+button:hover {
+    background: #a03a3a;
+}
+
+button:active {
+    box-shadow: #b43838 0 2px 10px -10px;
+    background-color: #985454;
+    transform: translateY(2px);
 }
 
 .pane {
     margin-bottom: 20px;
 }
+
+h2 {
+    margin: 40px 0px;
+}
+
