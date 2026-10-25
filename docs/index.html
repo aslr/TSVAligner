@@ -7,20 +7,19 @@
 </head>
 <body>
     <h2>Swift TSV Aligner</h2>
-
     <div class="pane">
         <label for="inputArea">Paste your TSV text here:</label>
         <textarea id="inputArea" placeholder="Paste TSV data here..."></textarea>
     </div>
-
-    <button id="formatBtn">Format Columns</button>
-
+    <div class="input-area">
+        <button id="formatBtn">Format Columns</button>
+    </div>
     <div class="pane" style="margin-top: 20px;">
         <label for="outputArea">Aligned Output:</label>
         <textarea id="outputArea" readonly placeholder="Aligned text will appear here..."></textarea>
     </div>
     <div class="copyright">
-        <p>Bioinformatics - University of Algarve - 2026</p>
+        <p>University of Algarve - Bioinformatics - 2026</p>
     </div>
 
     <!-- Load the Swift WASM bridge -->
