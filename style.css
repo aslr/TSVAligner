@@ -19,7 +19,6 @@ textarea {
 
 textarea[readonly] {
     background-color: #697f95;
-    color: #f3f6f7;
 }
 
 #outputArea::placeholder {
